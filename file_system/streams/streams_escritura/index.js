@@ -12,7 +12,7 @@ rl.question('¿Como te llamas?', (answer) => {
     rl.setPrompt('¿Que quieres decir? (exit si quieres salir)');
     rl.prompt();//escribirlo en la consola
 
-    //Cada vez que se escriba al go se ejecuta esta accion
+    //Cada vez que se escriba algo se ejecuta esta accion
     rl.on('line', (data) => {
         if(data.toLowerCase().trim() === 'exit'){
             stream.close();//Cerramos consola e interfaz
