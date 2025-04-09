@@ -1,5 +1,15 @@
 GET http://localhost:3000/products
 ###
+GET http://localhost:3000/products/8894
+###
 GET http://localhost:3000/products/new 
 ###
 POST http://localhost:3000/products/create
+Content-Type: application/json
+
+{
+    "name": "Ordenador",
+    "price": 120,
+    "stock": 10,
+    "available": true
+}
