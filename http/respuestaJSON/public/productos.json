@@ -1,0 +1,16 @@
+[
+    {
+        "nombre": "Televisor LED",
+        "descripcion": "Televisor de 32 pulgadas con resolucion HD",
+        "precio": 299.99,
+        "disponible": true,
+        "departamento": "Electronica"
+    },
+    {
+        "nombre": "Bicicleta de montaña",
+        "descripcion": "Bicicleta de montaña resistente con 21 velocidades",
+        "precio": 199.99,
+        "disponible": true,
+        "departamento": "Deportes"
+    }
+]
