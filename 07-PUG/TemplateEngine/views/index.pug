@@ -1,0 +1,40 @@
+extends layout.pug
+
+block content
+  h2 Subtitulo 
+  div 
+    p Contenido del parrafo 
+
+  div 
+    a(href="http://www.google.com", class="" id="") google.com
+    a#enlaceYoutube.enlace.principal(href="http://www.youtube.com") youtube
+
+  div 
+    p= name 
+    p me llamo #{name}
+
+
+  div 
+    if available
+      p esta disponible 
+    else 
+      p no esta disponible
+
+  div 
+    ul
+    //-El - es para poner codigo js puro
+    - for(let i = 0; i< animals.length; i++)
+      li= animals[i]
+
+  div 
+    ul 
+      //-Con el each se puede usar un else
+      each animal in animals
+        li Animal: #{animal}
+      else
+        li no hay animales
+
+  //Comentario HTML que sale en el navegador
+
+block footer
+  p Lista de animales
